@@ -4,7 +4,7 @@ Created 2026-10-23 as a private top-level page.
 
 ```text
 📈 Trend Workspace          https://app.notion.com/p/4022f114d1958164a5aee10da43b9d6c
-├── Three pillars, daily routine, Grok prompts, scoring prompt, kill rules, weights (page body)
+├── Three pillars, daily routine, Grok prompts, scoring prompt, automated sources, kill rules, weights (page body)
 ├── Trend Inbox (database)  https://app.notion.com/p/fc9fc1644e91453b9ebf452413281657
 │                           data source: collection://44f83f57-1f13-456d-afb7-f686301c91b0
 ├── 📥 Drop (page)          https://app.notion.com/p/4022f114d195814791c4c861f659d1d8

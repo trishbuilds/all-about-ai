@@ -35,7 +35,7 @@ The key idea: X and LinkedIn tell you what the tech crowd is talking about; HN, 
 Everything goes into a single Notion database called Trend Inbox, one row per story, not per post. See [notion/workspace.md](../notion/workspace.md).
 
 - **Manual drops:** when you save something on X or LinkedIn, paste the link into the "Drop" page in Notion. Claude processes it on the next scoring run.
-- **Automated pulls:** the daily run adds HN, GitHub, Hugging Face and Product Hunt.
+- **Automated pulls:** saying "pull trends" adds stories from HN, Hugging Face (models and Daily Papers), Product Hunt, Simon Willison's blog and GitHub trending. See [prompts/trend-pull.md](../prompts/trend-pull.md).
 - **Dedupe:** Claude clusters rows about the same thing (e.g. a model launch that shows up on X, HN and Reddit) into one row and lists every source link on it. The number of sources becomes your breadth signal.
 
 ## 3. Filter and score

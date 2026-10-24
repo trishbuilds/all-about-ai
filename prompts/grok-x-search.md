@@ -1,15 +1,17 @@
 # Grok X search prompts (one per pillar)
 
-Run these in Grok (X app or grok.com, free with X Premium) each morning, about 3 minutes, then paste the answers into the Notion **Drop** page under "Grok X results". One prompt per [pillar](../docs/pillars.md) so trend news doesn't crowd out the slower pillars. Grok only searches X, so add Working with AI finds from YouTube, podcasts, blogs and Reddit to Drop by hand.
+Run these in Grok (X app or grok.com, free with X Premium) each morning, about 3 minutes, in the same chat and in order (so Grok can avoid repeats), then paste the answers into the Notion **Drop** page under "Grok X results". One prompt per [pillar](../docs/pillars.md) so trend news doesn't crowd out the slower pillars. Grok only searches X, so add Working with AI finds from YouTube, podcasts, blogs and Reddit to Drop by hand.
 
 Automating this through the xAI API costs about $8 a month at one run a day returning ~50 posts (X search is $5 per 1,000 posts returned, plus tokens; checked 2026-10-20 at docs.x.ai/developers/pricing). For now Trish runs it by hand.
 
 ```text
-TREND: Using X search, list the 10 most-discussed AI launches, demos or controversies from the last 24 hours, with post links and engagement. Skip crypto, giveaways and engagement bait.
+Run all three in the same Grok chat, in this order, so it can avoid repeats.
 
-HOW AI WORKS: Using X search, find the 5 most-shared posts from AI researchers or lab accounts in the last 3 days that explain a new result, model release or technique. Summarise each in plain English with the link.
+TREND: Using X search, list the 10 most-discussed AI launches, demos or controversies from the last 24 hours. One story per item, no roundups. Every item must include a direct link to the original post; skip anything you can't link. Give engagement, and say whether the claim is confirmed by the original source or only reported by others. Skip crypto, giveaways and engagement bait.
 
-WORKING WITH AI: Using X search, find the 8 most-saved or most-shared posts from the last 3 days where people share how they work with AI or agents: their methodology, skills, mindset, workflows, setups, or experiments (including failures and lessons learned). Prefer first-hand accounts over generic tips. Include the link, the author and the one-line takeaway.
+HOW AI WORKS: Using X search, find 5 posts from the last 3 days where independent researchers, engineers or educators explain how something in AI works: a technique, a result, a failure or a model behaviour. Prefer independent voices over companies announcing their own products. Do not repeat any story from the TREND list. Only include posts you actually read. Give the link, the author and a plain-English summary.
+
+WORKING WITH AI: Using X search, find the 8 most-saved or most-shared posts from the last 3 days where people share how they work with AI or agents: their methodology, skills, mindset, workflows, setups, or experiments (including failures and lessons learned). Prefer first-hand accounts over generic tips. Only include posts you actually read; never guess from engagement. Cover a mix of tools (Claude, ChatGPT, Gemini, Cursor, open-source and Grok), not mostly one. Do not repeat stories from the lists above. Include the link, the author and the one-line takeaway.
 ```
 
 ## Original single prompt (before pillars)

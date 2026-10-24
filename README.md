@@ -6,7 +6,7 @@ A daily system for turning AI news, explainers on how AI works, and practical wa
 
 | When | Who | What |
 | --- | --- | --- |
-| On demand | Claude | Say **"pull trends"**: pulls Hacker News, Hugging Face, GitHub trending and Product Hunt and adds up to 10 new stories to Trend Inbox as **New**. See [prompts/trend-pull.md](prompts/trend-pull.md). |
+| On demand | Claude | Say **"pull trends"**: fetches Hacker News, Hugging Face models and Daily Papers, Product Hunt, Simon Willison's blog and GitHub trending, and adds new AI stories to Trend Inbox as **New** with a Pillar. See [prompts/trend-pull.md](prompts/trend-pull.md). |
 | Morning, ~3 min | You | Run the three [Grok prompts](prompts/grok-x-search.md), one per pillar, in the X app and paste the answer into the Notion **Drop** page. |
 | During the day, ~10 min | You | LinkedIn sweep: save 3 to 5 posts into Drop. See [linkedin/follow-list.md](linkedin/follow-list.md). |
 | Any time | You | Note AI tool or agent experiments in the Notion **Lab log**. |
@@ -27,7 +27,8 @@ A daily system for turning AI news, explainers on how AI works, and practical wa
 | [config/scoring.yaml](config/scoring.yaml) | Kill rules, scoring weights and the shortlist threshold |
 | [linkedin/follow-list.md](linkedin/follow-list.md) | Starter list of LinkedIn people and company pages |
 | [notion/workspace.md](notion/workspace.md) | Notion Trend Workspace layout, Trend Inbox schema, Drop and Lab log templates |
-| [prompts/trend-pull.md](prompts/trend-pull.md) | The on-demand source pull: sources and full prompt |
+| [prompts/trend-pull.md](prompts/trend-pull.md) | The on-demand source pull and its 6 automated sources |
+| [skills/pull-trends/SKILL.md](skills/pull-trends/SKILL.md) | The "pull trends" Claude skill |
 | [skills/score-trends/SKILL.md](skills/score-trends/SKILL.md) | The "score today" Claude skill |
 
 ## Live copies
