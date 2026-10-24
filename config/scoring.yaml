@@ -1,0 +1,60 @@
+# Trend scoring rubric. Weights are a starting guess; adjust after the weekly review.
+# Mirrors skills/score-trends/SKILL.md.
+
+shortlist_threshold: 3.5   # weighted score (out of 5) needed to reach Shortlist
+
+pillars:                   # see docs/pillars.md
+  Trend:
+    usual_type: News
+    shelf_life: 24-48h
+    keep_as_new_days: 3    # unshortlisted New stories older than this become Killed
+    weekly_target: 3
+  How AI works:
+    usual_type: Evergreen
+    shelf_life: weeks
+    keep_as_new_days: 14
+    weekly_target: 2
+  Working with AI:
+    usual_type: Evergreen
+    shelf_life: weeks to months
+    keep_as_new_days: 14
+    weekly_target: 2
+
+kill_rules:                # any one = Killed
+  - Rumour from a single anonymous source, or can't be verified
+  - Nothing to show on screen and no strong opinion or lesson to share
+  - Enterprise-only news with no effect on everyday people or individual practitioners
+  - Rated Crowded on short video, unless there is a contrarian take
+  - Doesn't fit any of the three pillars
+  - "Working with AI: generic, recycled tips with no first-hand method, experiment or result behind them"
+
+criteria:                  # each scored 1-5, then weighted
+  - name: Velocity
+    weight: 0.25
+    five_looks_like: "Trend: took off in the last 24-48h and still climbing. How AI works / Working with AI: getting real attention this month"
+  - name: Audience fit
+    weight: 0.20
+    five_looks_like: Viewers would use it, feel it, or change how they work with AI this week
+  - name: Visual-ability
+    weight: 0.20
+    five_looks_like: Can be shown on screen in under 10 seconds (demo, before/after, screen recording of the workflow)
+  - name: Your angle
+    weight: 0.15
+    five_looks_like: "Room for a test, a take or a fresh explanation. Working with AI: Trish can try the method herself before filming (her own Lab log experiments score 5)"
+  - name: Breadth
+    weight: 0.10
+    five_looks_like: On X and LinkedIn, or 3+ independent sources
+  - name: Short-video gap
+    weight: 0.10
+    five_looks_like: Rated Open on TikTok/Shorts (use 3 if not yet checked)
+
+short_video_check:
+  Open: under ~5 decent videos
+  Warm: some coverage, room for a fresh angle
+  Crowded: big creators have covered it
+
+types:
+  News: post within 48h or drop it
+  Evergreen: can wait in the backlog for the Mon/Thu batch
+
+angles: [I tested it, What it means for you, How to use it, Myth vs reality, Hot take, Explain it simply, Comparison, Behind the method]
